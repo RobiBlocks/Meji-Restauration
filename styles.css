@@ -188,4 +188,20 @@ figure:focus-within figcaption {
     grid-column: 3 / 4;
     background-color: #e6d2dc;
   }
+  #meji-portrait-div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #meiji-portrait {
+    min-width: 400px;
+    margin: 50px 40px 50px 70px;
+  }
+  #meiji-portrait img{
+    min-width: 400px;
+  }
+  #main {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+  }
 }

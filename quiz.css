@@ -42,7 +42,7 @@ h1 {
 #quiz-panel,
 #evaluation-panel {
   grid-row: 4 / 5;
-  grid-column: 2 / 3;
+  grid-column: 1 / 4;
 }
 fieldset {
   background-color: var(--light);
@@ -81,5 +81,10 @@ button:hover {
   }
   fieldset {
     width: 100%;
+  }
+  #quiz-panel,
+  #evaluation-panel {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
   }
 }
