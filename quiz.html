@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="quiz.css" />
+    <script defer type="text/javascript" src="script.js"></script>
+    <script defer type="text/javascript" src="quiz.js"></script>
+  </head>
+
+  <body onload="newQuestion()">
+    <header>
+      <h1>Meji-Restauration</h1>
+    </header>
+
+    <div id="title">
+      <h1>Quiz</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="edoTime.html">Ende der Isolation</a>
+        </li>
+        <li>
+          <a href="mejiTime.html">Reformen</a>
+        </li>
+        <li>
+          <a href="quiz.html">Quiz</a>
+        </li>
+        <li>
+          <a href="sources.html">Quellen</a>
+        </li>
+      </ul>
+    </nav>
+
+    <article></article>
+
+    <section id="quiz-panel">
+      <fieldset>
+        <div id="question-number">Frage 1</div>
+        <div id="question"></div>
+        <div id="answers">
+          <label class="answer"
+            ><b>A</b><input type="radio" id="a" name="quiz" value="0" />
+            <div id="answer-a"></div>
+          </label>
+
+          <label class="answer"
+            ><b>B</b><input type="radio" id="b" name="quiz" value="1" />
+            <div id="answer-b"></div>
+          </label>
+
+          <label class="answer"
+            ><b>C</b><input type="radio" id="c" name="quiz" value="2" />
+            <div id="answer-c"></div>
+          </label>
+
+          <label class="answer"
+            ><b>D</b><input type="radio" id="d" name="quiz" value="3" />
+            <div id="answer-d"></div>
+          </label>
+        </div>
+        <button onclick="answer()">Antworten</button>
+      </fieldset>
+    </section>
+
+    <section id="evaluation-panel">
+      <fieldset>
+        <h2>Quiz Auswertung:</h2>
+        <div id="evaluation"></div>
+        <a href="quiz.html"><button>Quiz wiederholen</button></a>
+      </fieldset>
+    </section>
+
+    <aside></aside>
+
+    <footer>© Robin Müller 2025</footer>
+  </body>
+</html>
